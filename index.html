@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="main">
+
+
+        <div class="title">
+
+            <h1 id="title">The Survey Form</h1>
+            <p id="description">Fill the Form and Help Us to Improve.</p>
+
+        </div>
+
+        <form id="survey-form" action="">
+            <div class="form-name">
+
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-email">
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Enter Email Address">
+            </div>
+
+            <div class="age">
+
+                <label for="age" id="number-label">Age</label>
+                <input type="number" name="age" id="number" min="10" max="99" placeholder="Enter Your Age">
+            </div>
+                
+
+            
+
+            <div class="form-dropdown">
+
+                <p>What Are You Doing Currently</p>
+                <select name="dropdown" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="universit-student">University Student</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+
+            <div class="form-gender">
+
+                <p>Gender</p>
+                
+                <label for="male">
+                <input type="radio" id="male" name="gender" value="male">
+                Male</label>
+
+                <label for="female">
+                <input type="radio" id="female" name="gender" value="female">
+                Female</label>
+
+                <label for="other">
+                <input type="radio" id="other" name="gender" value="other">
+                Other</label>
+            </div>
+
+
+
+            <div class="form-skills">
+
+                <p>What is the Skills you have?</p>
+                <label for="skill-1">
+                <input type="checkbox" id="skill-1" name="coding" value="coding">
+                Coding</label>
+                <label for="skill-2">
+                <input type="checkbox" id="skill-2" name="flute" value="flute">
+                Flute</label>
+                <label for="skill-3"></label>
+                <input type="checkbox" id="skill-3" name="other" value="other">
+                Others</label>
+            </div>
+
+
+            <div class="form-text">
+
+                <p>Write your Opinion or Suggestion</p>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"
+                    placeholder="write down your comments"></textarea>
+            </div>
+
+
+            <div class="form-submit">
+                <button id="submit">Submit</button>
+
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
